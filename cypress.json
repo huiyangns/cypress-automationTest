@@ -1,0 +1,17 @@
+{
+  "baseUrl": "http://www.webdriveruniversity.com/",
+  "pageLoadTimeout": 30000,
+  "env": {
+    "first_name": "john",
+    "webdriveruni_url": "http://www.webdriveruniversity.com/"
+  },
+  "projectId": "s9wscm",
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "configFile": "reporter-config.json"
+  },
+  "retries":{
+    "runMode":0,
+    "openMode":0
+  }
+}
