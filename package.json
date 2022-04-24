@@ -10,7 +10,9 @@
     "mochawesome-merge": "npx mochawesome-merge cypress/results/mochawesome/*.json > mochawesome.json && npx marge mochawesome.json",
     "delete-mochawesome-report": "rmdir /s/q mochawesome-report",
     "cypress-regression-pack": "npm run delete-results && npm run delete-mochawesome-report && npm run triggerAllTests-headless && npm run mochawesome-merge",
-    "triggerAllTests-staging": "npx cypress run --config-file cypress/config/stage.json --headed"
+    "triggerAllTests-staging": "npx cypress run --config-file cypress/config/stage.json --headed",
+    "triggerAllTests-automation-testStore-via-MultiBrowsers": "npm run triggerAllTests-automation-testStore -- --browser electron --headed & npm run triggerAllTests-automation-testStore -- --browser edge --headed",
+
     
   },
   "devDependencies": {
