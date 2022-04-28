@@ -25,7 +25,7 @@ function getConfigurationByFile(file) {
 
 // plugins file
 module.exports = (on, config) => {
-  // accept a configFile value or use development by default
+  // accept a configFile value
   const file = config.env.configFile 
 
   return getConfigurationByFile(file)
